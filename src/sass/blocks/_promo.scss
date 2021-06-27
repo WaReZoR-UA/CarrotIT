@@ -1,0 +1,83 @@
+.promo {
+    position: relative;
+    height: 1200px;
+    background: url(../img/header_bg.jpeg) center ( center / cover ) no-repeat;
+    padding: 65px 95px 95px 95px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    list-style: none;
+    &__item {
+        a{
+            text-decoration: none;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            background:linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
+            background-size:0 2px;
+            transition:background 250ms ease 0s;
+                &:hover {
+                     background-size: 100% 2px;
+                }
+        }   
+    }
+}
+.video {
+    display: flex;
+    &__container {
+        margin-left: 32px;
+    }
+    &__box {
+        position: relative;
+        &-bg {
+            border-radius: 19px;
+        }
+        &-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0 0 5px rgba($color: #000000, $alpha: .6);
+                border-radius: 5px;
+            }
+        }
+        &-descr {
+            color: #fff;
+            margin-top: 25px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
+.title>h1 {
+    position: absolute;
+    max-width: 1398px;
+    bottom: 95px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 184px;
+    line-height: 184px;
+    letter-spacing: -0.02em;
+}
+.mission {
+    width: 400px;
+    float:right;
+    margin-top: 157px;
+    margin-right: 153px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -.02em;
+
+}
